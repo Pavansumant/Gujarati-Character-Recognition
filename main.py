@@ -151,7 +151,7 @@ class Ui_MainWindow(object):
 
         test_datagen = ImageDataGenerator(rescale = 1./255)
 
-        training_set = train_datagen.flow_from_directory('D:/MasterClass/Artificial_Intelligence/Day15/Gujarathi_character_recognition_CNN/Dataset/train',
+        training_set = train_datagen.flow_from_directory('D:/Gujarathi_character_recognition_CNN/Dataset/train',
                                                          target_size = (128, 128),
                                                          batch_size = 8,
                                                          class_mode = 'categorical')
@@ -160,7 +160,7 @@ class Ui_MainWindow(object):
         print(labels)
         
 
-        test_set = test_datagen.flow_from_directory('D:/MasterClass/Artificial_Intelligence/Day15/Gujarathi_character_recognition_CNN/Dataset/val',
+        test_set = test_datagen.flow_from_directory('D:/Gujarathi_character_recognition_CNN/Dataset/val',
                                                     target_size = (128, 128),
                                                     batch_size = 8,
                                                     class_mode = 'categorical')
